@@ -313,14 +313,14 @@ public final class TermuxWidgetProvider extends AppWidgetProvider {
         if (shortcutParentDirFile != null && shortcutParentDirFile.getName().equals(TermuxConstants.TERMUX_SHORTCUT_TASKS_SCRIPTS_DIR_BASENAME)) {
             executionCommand.inBackground = true;
             // Show feedback for background task
-            Toast toast = Toast.makeText(context, context.getString(R.string.msg_executing_task,
-                    ShellUtils.getExecutableBasename(executionCommand.executable)),
-                    Toast.LENGTH_SHORT);
+            // Toast toast = Toast.makeText(context, context.getString(R.string.msg_executing_task,
+            //         ShellUtils.getExecutableBasename(executionCommand.executable)),
+            //         Toast.LENGTH_SHORT);
             // Put the toast at the top of the screen, to avoid blocking eventual
             // toasts made from the task with termux-toast.
             // See https://github.com/termux/termux-widget/issues/33
-            toast.setGravity(Gravity.TOP, 0, 0);
-            toast.show();
+            // toast.setGravity(Gravity.TOP, 0, 0);
+            // toast.show();
         }
 
 
